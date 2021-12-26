@@ -1,0 +1,1728 @@
+<!-- Created by Anshika (Left) -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="C:\Users\Anshika Thakur\Desktop\Web Tricks\my\m.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+<style>
+    /* Created by Anshika (Left) */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+}
+.menu{
+    z-index: 90;
+    position: fixed;
+    top:20px;
+    right:25px;
+    background: #01041900;
+    user-select: none;
+    cursor: pointer;
+    color: aliceblue;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+.menu b, .menu i{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+.menu b:hover, .menu i:hover;{
+    background: -webkit-linear-gradient(45deg, #b9d9fe, #ebf5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.landing{
+    height: 100%;
+    width: 100%;
+    background-image:url("https://images.unsplash.com/photo-1530533718754-001d2668365a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjJ8fGJsdWV8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60");
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+.over{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #1b252e6b;
+}
+.sidenavm{
+    height:100vh;
+    width:70vw;
+    overflow: scroll;
+    display: block;
+    position: fixed;
+    top: 0;
+    right: -70vw;
+    z-index: 100;
+    background: #01000a;
+    padding-top: 30px;
+    transition: all 1s;
+    padding-left: 15px;
+    overflow-x: hidden;
+}
+.sidenav{
+    position: absolute;
+    top: 43%;
+    width: 100%;
+}
+.sidenav a{
+    display: block;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #b9d9fe, #ebf5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    padding:5px;
+    width: 60%;
+    transition: all .5s;
+    margin-top: 7px;
+    text-transform: uppercase;
+}
+.sidenav a:hover{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-bottom: 2px solid rgba(141, 168, 243, 0.76);
+}
+.closebtn{
+    position: absolute;
+    top: 15px;
+    left: 85%;
+    display: block;
+    text-decoration: none;
+    background: -webkit-linear-gradient(45deg, #b9d9fe, #ebf5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    font-weight: 900;
+    transition: all .5s;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 25px;
+    padding: 5px;
+}
+.closebtn:hover{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50%;
+    border: 2px double #2b97fc;
+}
+.logop{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-image:url("https://www.dropbox.com/s/z1c56gzcgo5p5vq/images%20%2810%29%20%2817%29.jpeg?dl=1");
+    background-size:100% 100%;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 1vmin .2vmin  #55acfdde;
+    margin-bottom: 10px;
+}
+.logotext{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 10px;
+    text-shadow: 0 0 3px rgb(105, 115, 255);
+    animation: lt 2s linear alternate infinite;
+    font-size: 1rem;
+    text-transform:capitalize;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+@keyframes lt{
+    0%{
+        text-shadow: 0 0 3px rgba(162, 208, 219, 0.856); 
+    }
+    50%{
+        text-shadow: 0 0 3px rgba(196, 203, 243, 0.856); 
+    }
+    100%{
+        text-shadow: 0 0 3px rgba(72, 114, 252, 0.856); 
+    }
+    
+}
+.icons{
+    position: absolute;
+    bottom: 3%;
+    left: 0;
+    width: 90%;
+    left:45%;
+    transform: translateX(-50%);
+    background: -webkit-linear-gradient(45deg, #b9d9fe, #ebf5ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 25px 0 25px;
+    margin-top: 25px;
+}
+.icons i{
+    transition: all .5s;
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 35px;
+    padding: 10px;
+}
+.icons i:hover{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    border-radius: 50%;
+    border: 2px double #2b97fc;
+}
+@keyframes ham {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.subnav{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+    opacity: 0; 
+    transition: all 2s ease;
+}
+.maggi{
+    position: absolute;
+    top: 1.5px;
+    left: 15px;
+    color: rgb(238, 244, 248);
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: 1.5rem;
+    user-select: none;
+    cursor: pointer;
+}
+.maggi b{
+    background: -webkit-linear-gradient(45deg, #2b97fc, #0484fc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2rem;
+}
+.welcometxt{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 70%;
+}
+.welcometxt h5{
+    color:rgba(158, 157, 157, 0.7) ;
+    letter-spacing: 2px;
+    font-weight: 800;
+    font-size: 1rem;
+}
+.welcometxt h3{
+    color: rgb(238, 244, 248);
+    margin-top: 8px;
+    text-shadow: 1px 1px 2px #474747;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+}
+.btnsbox{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+.btn{
+    margin: 10px 0;
+    border: 3px solid #fff;
+    padding:7px;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;  
+    transition: all 1s ease;
+}
+.btn a{
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 1s ease;
+}
+.btn:hover{
+    background: whitesmoke;
+    font-weight: 900;
+}
+.btn:hover a{
+    color: #0484fc;
+    font-weight: 900;
+}
+.aboutme{
+    min-height: 100%;
+    width: 100%;
+    padding: 80px;
+    background: #0484fc; 
+    margin-top: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.qualities{
+    margin-top: none;
+    background: #f5f5f5;
+    width: 100%;
+    padding: 80px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.works, .likes, .contact{
+    margin-top: none;  
+    background: linear-gradient(180deg,#01000a 25%, #f5f5f5 25%);
+    width: 100%;
+    padding: 80px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact{
+    background:linear-gradient(0deg, rgba(0,0,0,0.5), rgba(0,0,0, 0.5)), url("https://images.unsplash.com/photo-1504610926078-a1611febcad3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJsYWNrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60");
+    background-size: 100% 100%;
+    position: relative;
+}
+.likes{
+    background: #e6e6e6;
+}
+.hello, .achievement, .skills{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+.qualities .hello, .works .hello, .likes .hello, .contact .hello{
+    width: 100%;
+}
+.qualities .hello b, .works .hello b, .likes .hello b, .contact .hello b{
+    color: #0484fc;
+    margin-bottom: 10px;
+}
+.hello b{
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+.contact .hello b{
+    font-weight: 900;
+}
+.hello h1, .achievement h1, .skills h1, .qualities .hello h1, .likes .hello h1{
+    color: rgb(238, 244, 248);
+    padding-bottom: 20px;
+    font-size: 2rem;
+    border-bottom: 1px solid #b9b9b9e1;
+    text-transform: capitalize;
+    text-align: center;
+}
+.qualities .hello h1, .likes .hello h1{
+    color: #000;
+    font-size: 1.5rem;
+}
+.works .hello h1{
+    font-size: 2rem;
+    line-height: 3rem;
+    width: 80%;
+}
+.about p{
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+.about{
+    display: grid;
+    place-items: center;
+}
+.about p b{
+    color: #474747;
+    font-family: 'Times New Roman', Times, serif;
+}
+.achievement h1, .skills h1{
+    margin-top:40px;
+    letter-spacing: 5px;
+    width: auto;
+    text-align: center;
+}
+.skills h1{
+    margin-top: 80px;
+}
+.achievement .box, .skills .box, .quality .box, .work .box, .contact .box{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quality .box{
+    width: 100%;
+    justify-content: space-between;
+}
+.quality .box .sub, .work .box .sub{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.achievement .box .a, .skills .box .s, .quality .box .sub .q, .work .box .sub .w{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.achievement .box .a .iconbox, .quality .box .sub .q .iconbox{
+    font-size: 30px;
+    border: 5px solid #b9d9fe;
+    height: 80px;
+    width: 80px;
+    display: grid;
+    place-items: center;
+    transform: rotate(45deg);
+}
+.achievement .box .a .iconbox .fa, .quality .box .sub .q .iconbox i{   
+    transform: rotate(-45deg);
+}
+.achievement .box .a .number, .skills .box .s .snumber, .quality .box .sub .q h1{
+    margin-top: 25px;
+    font-size: 1.5rem;
+    color: rgb(238, 244, 248);
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+}
+.quality .box .sub .q{
+    margin-top: 50px;
+}
+.quality .box .sub .q .iconbox{
+    border-color: #0484fc;
+}
+.quality .box .sub .q h1{
+    color: #0484fc;
+}
+.achievement .box .a .title, .skills .box .s .title, .quality .box .sub .q p{
+    margin-top: 2.5px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+    padding-bottom: 30px;
+    padding-left: 50px;
+    padding-right:50px;    
+    border-bottom: 1px solid #b9b9b9e1;
+    text-transform: capitalize;
+    text-align: center;
+}
+.quality .box .sub .q p{
+    text-transform: none;
+    /* font-family: 'Times New Roman', Times, serif; */
+    color: #474747;
+    font-weight: 500;
+}
+.achievement .box .a4 .title, .skills .box .s4 .title,.quality .box .sub .q4 p{
+    border-bottom: none;
+}
+.a2, .a3, .a4, .s2,.s3,.s4{
+    margin-top: 50px;
+}
+.skillbox{
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.skillbox .icon{
+    position: absolute;
+    z-index: 6;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 80%;
+    margin: -40px 0 0 -40px;
+    background: #0484fc; 
+    border-radius: 100%;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    display: grid;
+    place-items: center;
+}
+.skills .box .s .icon i{
+    font-size: 35px;
+}
+.skillbox .pbar{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(197, 197, 197, 0.267);
+    border-radius: 100%;
+    clip: rect(0px, 100px, 100px, 50px);
+    overflow: hidden;
+}
+.pbox .pbar .progress{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background:#05fdfd;
+    border-radius: 100%;
+    clip: rect(0px, 50px, 100px, 0px);
+}
+.pbox .lp{
+    z-index: 1;
+    animation: left 4s linear both;
+}
+@keyframes left {
+    100%{
+        transform: rotate(180deg);
+    }
+}
+.pbox .right{
+    z-index: 3;
+    transform: rotate(180deg);    
+    background: rgba(197, 197, 197, 0.267);
+    overflow: hidden;
+}
+.pbox .rp{
+    z-index: 1;
+    animation: right 4s 4s linear both;
+}
+@keyframes right {
+    100%{
+        transform: rotate(18deg);
+    }
+}
+.s2 .pbox .lp{
+    z-index: 1;
+    animation: left2 4s linear both;
+}
+@keyframes left2 {
+    100%{
+        transform: rotate(151.2deg);
+    }
+}
+.s2 .pbox .rp, .s3 .pbox .rp, .s4 .pbox .rp{
+    z-index: 1;
+    animation: right2 4s 4s linear both;
+}
+@keyframes right2 {
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.s3 .pbox .lp{
+    z-index: 1;
+    animation: left3 4s linear both;
+}
+@keyframes left3 {
+    100%{
+        transform: rotate(136.8deg);
+    }
+}
+.s4 .pbox .lp{
+    z-index: 1;
+    animation: left4 4s linear both;
+}
+@keyframes left4 {
+    100%{
+        transform: rotate(10.8deg);
+    }
+}
+.work .box{
+    margin-top: 80px;
+    box-shadow:0 0 1vmin 1vmin #2222;
+}
+.work .box .sub .w, .food .slide .sl{
+    height: 300px;
+    width: 80vw;
+}
+.work .box .sub .w{
+    border:2px solid #e6e6e6;
+}
+.work .box .sub .w .imgbox, .food .slide .sl .imgbox{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.work .box .sub .w .imgbox img, .food .slide .sl .imgbox img{
+    height: 100%;
+    width: 100%;
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox:hover img, .food .slide .sl .imgbox:hover img{
+    transform: scale(1.1, 1.1);
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox .overlay, .food .slide .sl .imgbox .overlay{
+    overflow: hidden;
+}
+.work .box .sub .w .imgbox:hover .overlay, .food .slide .sl .imgbox:hover .overlay{    
+    background: rgba(27, 37, 46, 0.85);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: all .5s ease;
+    opacity: 1;
+}
+.work .box .sub .w .imgbox .overlay .zoom{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    font-size: 1.2rem;
+    color: rgba(238, 244, 248, 0.76);
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox .overlay .zoom a{
+    text-decoration: none;    
+    color: rgba(238, 244, 248, 0.76);
+}
+.work .box .sub .w .imgbox .overlay .zoom a:hover{
+    color: #0484fc;
+}
+.work .box .sub .w .imgbox:hover .overlay .zoom{
+    transform: translate(-50%, -50%) scale(1);
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox .overlay .name, .food .slide .sl .imgbox .overlay .name{
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    bottom: 15%;
+    left: -100%;
+    transform: translate(0%, -50%);
+    font-size: 1rem;
+    color: rgba(238, 244, 248, 0.96);
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox:hover .overlay .name, .food .slide .sl .imgbox:hover .overlay .name{
+    left: 10%;
+    transition: all 1s ease;
+}
+.food .slide .sl .imgbox .overlay .name{
+    bottom: 25%;
+}
+.work .box .sub .w .imgbox .overlay .wnumber, .food .slide .sl .imgbox .overlay .wnumber{
+    text-transform: uppercase;
+    font-weight: 700;
+    position: absolute;
+    top: -50%;
+    left: 10%;
+    font-size: 1rem;
+    color: rgba(238, 244, 248, 0.76);
+    font-size: 25px;
+    border: 5px solid #b9d9fe;
+    height: 50px;
+    width: 50px;
+    display: grid;
+    place-items: center;
+    transform: rotate(-180deg);
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox:hover .overlay .wnumber, .food .slide .sl .imgbox:hover .overlay .wnumber{
+    top: 15%;
+    transform: rotate(45deg);
+}
+.work .box .sub .w .imgbox .overlay .wnumber b, .food .slide .sl .imgbox .overlay .wnumber b{    
+    transform: rotate(-45deg);
+}
+.work .box .sub .w .imgbox .overlay .desc, .food .slide .sl .imgbox .overlay .desc{
+    text-transform: capitalize;
+    font-weight: 400;
+    position: absolute;
+    bottom: -50%;
+    left: 10%;
+    transform: translate(0%, -30%);
+    font-size: .9rem;
+    color:rgba(158, 157, 157, 0.7) ;
+    transition: all 1s ease;
+}
+.work .box .sub .w .imgbox:hover .overlay .desc, .food .slide .sl .imgbox:hover .overlay .desc{
+    bottom:8%;
+    transition: all 1s ease;
+}
+.food .slide .sl .imgbox:hover .overlay .desc{
+    bottom: 0%;
+    width: 85%;
+}
+.food .slide .sl .imgbox .overlay .desc{
+    font-weight: 600;
+    color:rgba(158, 157, 157, 0.829) ;
+}
+.food{
+    margin-top: 50px;
+}
+.slide{
+    /* display: none; */
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+}
+.slide .in{
+    width: 5vw;
+    display: grid;
+    place-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+.likes .slide .in i:hover{
+    color: #2b97fc;
+}
+.contact .box{
+    background: rgba(0,0,0,0.8);
+    display: grid;
+    place-items: center;
+    padding: 15px;
+    border-radius:5px;
+}
+.contact .box.sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+.contact .box .sub .aboutbox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+}
+.contact .box .sub .aboutbox .abt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 25px;
+    width: 60%;
+}
+.contact .box .sub .aboutbox .abt b{
+    color: #2c52ed;
+    text-transform: uppercase;
+}
+.contact .box .sub .aboutbox .abt p{
+    text-align: center;
+    margin-top: 2.5px;
+    color: rgb(238, 244, 248);
+}
+.contact .box.sub .formbox{
+    width: 100%;
+}
+form .field{
+    width: 100%;
+    margin-bottom: 10px;
+}
+form .field input{
+    height: 50px;
+    width: 100%;
+    outline: none;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 2px solid #bfbfbfb2;
+    background-color: transparent;
+    color: rgb(238, 244, 248);
+}
+form .field input::placeholder{
+    color: #bfbfbfb2;
+    font-size: 15px;
+}
+form .message{
+    height: 150px;    
+    border-bottom: 2px solid #bfbfbfb2;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+form .message input{
+    border-bottom: none;
+    padding: 0px;
+    height: auto;
+    max-width: 100%;
+    max-height: 150px;
+}
+form .field .et{
+    color: #fff;
+    margin-top: 20px;
+    text-align: left;
+    background-color: #2c52ed;
+    padding: 5px;
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+}
+form .message .et{
+    bottom: -135px;
+    transform: translate(-50%, -50%);
+}
+form .field .et:before{
+    position: absolute;
+    content: "";
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid #2c52ed;
+}
+form input:focus{
+    border-color: #2c52ed;
+    transition: all 0.5s ease;
+}
+form .message:hover{
+    border-color: #2c52ed;
+    transition: all 0.5s ease;
+} 
+form input[type="submit"]{
+    margin-top: 60px;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background: #2c52ed;
+    transition: all 0.2s ease;
+}
+form input[type="submit"]:hover{
+    background: #5372f0;
+}
+.err{
+    animation: shake 0.5s ease-in-out;
+}
+@keyframes shake{
+    0%,100%{
+        margin-left: 0;
+    }
+    20%,80%{
+        margin-left: -10px;
+    }
+    40%,60%{
+        margin-left: 10px;
+    }
+}
+form .field .error{
+    display: none;
+}
+form .field.inc .error{
+    display: block;
+    margin-top:35px;
+}
+form .message .et{
+    bottom: -125px;
+    transform: translate(-50%, -50%);
+}
+.contact .footer{
+    color: #bfbfbfb2;
+    font-size: 15px;
+    width: 80vw;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+.main{
+    height:100%;
+    width:100vw;
+    position:fixed;
+    overflow:hidden;
+    top: 0;
+    left: 0;
+    background-color:rgb(1, 0, 15);
+    z-index: 100;
+}
+.lbox{
+    height:300px;
+    width:300px;
+    padding:30px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%) scale(0.5);
+    transform-style:preserve-3d;
+    position:absolute;
+    z-index:90;
+}
+.lbox .box{
+    height:250px;
+    width:250px;
+    background-color:transparent;
+    padding:30px;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    transform-style:preserve-3d;
+    position:absolute;
+}
+.lbox .box2{
+    transform:translate(-50%,-50%) rotate(30deg);
+}
+.lbox .box3{
+    transform:translate(-50%,-50%) rotate(-45deg);
+}
+.lbox .box4{
+    transform:translate(-50%,-50%) rotate(60deg);
+}
+.lbox .box5{
+    transform:translate(-50%,-50%) rotate(-75deg);
+}
+.lbox .box6{
+    transform:translate(-50%,-50%) rotate(105deg);
+}
+.lbox .box7{
+    transform:translate(-50%,-50%) rotate(-120deg);
+}
+.lbox .box8{
+    transform:translate(-50%,-50%) rotate(135deg);
+}
+.lbox .box9{
+    transform:translate(-50%,-50%) rotate(-150deg);
+}
+.lbox .box10{
+    transform:translate(-50%,-50%) rotate(165deg);
+}
+.lbox .b1{
+    height:100%;
+    width:100%;
+    border:2px solid transparent;
+    animation:r1 7s linear both infinite;
+    transform:perspective(1000px) translateZ(100%) rotate(-360deg);
+   /* transform-origin:top;*/
+}
+
+@keyframes r1{
+    0%{
+        transform:perspective(1000px) rotateX(0deg) rotate(-360deg);
+    }
+    
+    100%{
+        transform:perspective(1000px) rotateX(360deg) rotate(360deg);
+    }
+}
+
+.lbox .b{
+    border-image:linear-gradient(45deg, #2c52ed, #0484fc, #2b97fc, #5372f0, #b9d9fe);
+    border-image-slice:1;
+    /* box-shadow:0 0 .5vmin .5vmin #b9d9fed5; */
+}
+.sec{
+    display: none;
+}
+.load .bbtn{
+    margin: 10px 0;
+    border: 3px solid #fff;
+    padding:5px;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;  
+    transition: all 1s ease;
+    width:100px;
+    display:grid;
+    place-items:center;
+    position:absolute;
+    bottom:15px;
+    right:15px;
+}
+.load .bbtn p{
+    text-decoration: none;
+    font-weight: 500;
+    color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: all 1s ease;
+}
+.load .bbtn:hover{
+    background: whitesmoke;
+    font-weight: 900;
+}
+.load .bbtn:hover p{
+    color: #0484fc;
+    font-weight: 900;
+}
+@media (min-width:1200px){
+    .sidenav{
+        top: 40%;
+    }
+    .sidenav a{
+        margin-top: 15px;
+    }
+    .welcometxt{
+        justify-content: left;
+        align-items: left;
+        text-align: left;   
+        top: 80%;
+        width: 60%; 
+    }
+    .welcometxt h5{
+        font-size: 1.8rem;
+        text-align: left;
+        float: left;
+        width: 100%;
+    }
+    .welcometxt h3{
+        font-size: 3rem;
+        line-height: 3.8rem;
+        margin-top: 20px;
+    }
+    .sidenavm{
+        width: 30vw;
+    }
+    .btnsbox{
+        flex-direction: row;
+        width: 50%;
+        margin-top: 80px;
+        justify-content: space-around;
+        margin-left: -50%;
+    }
+    .btn{
+        width: 47%;
+        text-align: center;
+    }
+    .contact .hello b, .qualities .hello b, .aboutme .hello b, .works .hello b, .likes .hello b{
+        font-weight: 800;
+        letter-spacing: 3.5px;
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+    }
+    .contact .hello h1,.qualities .hello h1, .aboutme .hello h1, .works .hello h1, .likes .hello h1{
+        font-size: 3rem;
+        width: auto;
+    }
+    .about p{
+        width: 80%;
+        float: center;
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+    }
+    .achievement .box, .skills .box{
+        flex-direction: row;
+        margin-top: 80px;
+    }
+    .achievement .box .a .iconbox{
+        height: 120px;
+        width: 120px;
+        font-size: 50px;
+    }
+    .skills .skillbox{
+        transform: scale(1.2);
+    }
+    .achievement .box .a .number, .skills .box .s .snumber, .quality .box .sub .q h1{
+        font-size: 2.5rem;
+        margin-top: 35px;
+    }
+    .achievement .box .a .title, .skills .box .s .title{
+        border-bottom: none;
+        font-size: 1.5rem;
+    }
+    .a1, .a2, .a3, .a4, .s1, .s2, .s3, .s4{
+        margin-top: 0px;
+        padding-left:50px;
+        padding-right: 50px;
+        border-left:1px solid #b9b9b9e1;
+    }
+    .s1, .s2, .s3, .s4{
+        padding-left:70px;
+        padding-right:70px;
+    }
+    .a1, .s1{
+        border-left: none;
+    }
+    .quality .box .sub, .work .box .sub, .contact .box .sub{
+        flex-direction: row;
+    }
+    .quality .box .sub .q, .work .box .sub .w{
+        width: 45%;
+    }
+    .quality .box .sub .q3 p, .quality .box .sub .q4 p{
+        border-bottom: none;
+    }
+    .works{
+        padding: 100px 150px;
+        background: linear-gradient(180deg,#01000a 40%, #f5f5f5 40%);
+    }
+    .works .hello h1{
+        line-height: 3.8rem;
+        width: 80%;
+    }
+    .work .box .sub .w{
+        height: 400px;
+        width: 550px;
+    }
+    .work .box .sub .w .imgbox .overlay .zoom{
+        font-size: 1.8rem;
+    }
+    .work .box .sub .w .imgbox .overlay .name, .food .slide .sl .imgbox .overlay .name{
+        font-size: 2rem;
+    }
+    .work .box .sub .w .imgbox .overlay .wnumber, .food .slide .sl .imgbox .overlay .wnumber{
+        height: 80px;
+        width: 80px;
+        font-size: 30px;
+    }
+    .work .box .sub .w .imgbox .overlay .desc, .food .slide .sl .imgbox .overlay .desc{
+        font-size: 1.2rem;
+    }
+    .slide .in{
+        font-size: 2.5rem;
+    }
+    .likes .slide{
+        width: 700px;
+    }
+    .likes .slide .in{
+        margin: 0 20px;
+    }
+    .contact .box{    
+        margin-bottom: 50px;
+    }
+    .contact .box .sub{
+        display: flex;
+        flex-direction: row;
+        width: 70vw;
+        justify-content: space-between;
+    }
+    .contact .box .sub .formbox{
+        width: 55%;
+    }
+    .contact .box .sub .aboutbox{
+        width: 40%;
+        display: flex;
+        align-items: left;
+        justify-content: space-evenly;
+        flex-direction: column;
+        padding: 5px;
+    }
+     .contact .box .sub .aboutbox .abt{
+        display: flex;
+        align-items: left;
+        justify-content:left;
+        flex-direction: column;
+        
+    }
+}
+</style>
+    <div class="menu" id="ham" onclick="openNav()" onscroll="bg()"><b>Menu </b> &nbsp <i class="fas fa-bars"></i></div>
+    <div class="sidenavm" id="sidenavm">
+        <div class="subnav" id="subnav">
+            <a href="javascript:void(0)" id="close" class="closebtn" onclick="closeNav()" >
+                &times;
+                </a>
+            <div class="logop"></div>
+            <div class="logotext">~Born to Express, Not To Impress</div>
+            <div class="sidenav">
+                <a href="#hm"><i class="fa fa-home"></i>&nbsp Home</a>
+                <a href="#am"><i class="fab fa-autoprefixer"></i>&nbsp About Me</a>
+                <a href="#qm"><i class="fas fa-user-check"></i>&nbsp Qualities</a>
+                <a href="#wm"><i class="fas fa-code-branch"></i>&nbsp Works</a>
+                <a href="#lm"><i class="fas fa-heart"></i>&nbsp Likes</a>
+                <a href="#cm"><i class="fas fa-headset"></i>&nbsp Contact Me</a>
+            </div>
+            <div class="icons">
+                <i class="fas fa-phone-alt"></i>
+                <i class="fas fa-envelope-open-text"></i>
+                <i class="fab fa-github"></i>
+            </div>
+            
+        </div>
+    </div>
+     
+    <section class="landing sec" id="hm">
+        <div class="over">
+            <div class="maggi">Anshika<b>&#9836;</b></div>
+        </div>
+        <div class="welcometxt" id="welcometxt">
+            <h5>WELCOME TO MY PROTOFILO</h5>
+            <h3>I am a teenage girl having affinity towards maggi, chocolates and ice creams discovering secrets of coding and music.</h3>
+            <div class="btnsbox">
+                <div class="btn"><a href="#cm">Contact Me</a></div>
+                <div class="btn"><a href="#am">About ME</a></div>
+            </div>
+        </div>
+        
+    </section>
+    <section class="aboutme sec" id="am">
+        <div class="hello">
+            <b>Hellooo!!</b>
+            <h1>Let's Know Me</h1>
+        </div>
+        <div class="about">
+            <p>I am an introvert girl named <b>Anshika</b> born on <b>5 April, 2004</b>, somewhere in India, having great liking towards <b>maggi, chocolates</b> and <b>ice-cream</b>, aiming to get a well paid job in <b>IT Sector</b> and eyes shining with the dream of being a well known <b>Singer</b>, leaving everlasting impression in the world before dieing. Being <b>Beginner</b> in coding I aspire of being skilled in <b>Web Development</b>. I am committed to learning and <b>Self Development</b> so that I can consistently achieve better results.</p>
+        </div>
+        <div class="achievement">
+            <h1>Manoeuvre</h1>
+            <div class="box">
+                <div class="a a1">
+                    <div class="iconbox"><i class="fa fa-code"></i></div>
+                    <div class="number" data-target="50">0</div>
+                    <div class="title">Codes</div>
+                </div>
+                <div class="a a2">
+                    <div class="iconbox"><i class="fa fa-music"></i></div>
+                    <div class="number" data-target="56">0</div>
+                    <div class="title">Lyrics</div>
+                </div>
+                <div class="a a3">
+                    <div class="iconbox"><i class="fa fa-address-book"></i></div>
+                    <div class="number" data-target="143">0</div>
+                    <div class="title">Contacts</div>
+                </div>
+                <div class="a a4">
+                    <div class="iconbox"><i class="fa fa-users"></i></div>
+                    <div class="number" data-target="996">0</div>
+                    <div class="title">Followers</div>
+                </div>
+            </div>
+        </div>
+        <div class="skills">
+            <h1>EffiCiency</h1>
+            <div class="box">
+                <div class="s s1">
+                    <div class="skillbox sbox1">
+                        <div class="icon"><i class="fab fa-html5"></i></div>
+                        <div class="pbox">
+                            <div class="pbar">
+                                <div class="lp progress"></div>
+                            </div>
+                            <div class="pbar right">
+                                <div class="rp progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snumber">55%</div>
+                    <div class="title">Html5</div>
+                </div>
+                <div class="s s2">
+                    <div class="skillbox sbox1">
+                        <div class="icon"><i class="fab fa-css3"></i></div>
+                        <div class="pbox">
+                            <div class="pbar">
+                                <div class="lp progress"></div>
+                            </div>
+                            <div class="pbar right">
+                                <div class="rp progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snumber">42%</div>
+                    <div class="title">CSS</div>
+                </div>
+                <div class="s s3">
+                    <div class="skillbox sbox1">
+                        <div class="icon"><i class="fa fa-database"></i></div>
+                        <div class="pbox">
+                            <div class="pbar">
+                                <div class="lp progress"></div>
+                            </div>
+                            <div class="pbar right">
+                                <div class="rp progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snumber">38%</div>
+                    <div class="title">SQL</div>
+                </div>
+                <div class="s s4">
+                    <div class="skillbox sbox1">
+                        <div class="icon"><i class="fab fa-js"></i></div>
+                        <div class="pbox">
+                            <div class="pbar">
+                                <div class="lp progress"></div>
+                            </div>
+                            <div class="pbar right">
+                                <div class="rp progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="snumber">3%</div>
+                    <div class="title">Javascript</div>
+                </div>
+            </div>    
+        </div>
+    </section>
+    <section class="qualities sec" id="qm">
+        <div class="hello">
+            <b>My Personality</b>
+            <h1>I am Unique, I am me nothing more  nothing less and  That's enough </h1>
+        </div>
+        <div class="quality">
+            <div class="box">
+                <div class="sub sub1">
+                    <div class="q q1">
+                        <div class="iconbox"><i class="fa fa-user"></i></div>
+                        <h1>Introvert</h1>
+                        <p>Yes I am an Introvert, that doesn't mean I am shy or anti-social or fan of small talk, it's just I am quite an observer and treasure my solitude. I am quite a reserved personality and appreciate true connection instead of fake talks :) </p>
+                    </div>
+                    <div class="q q2">
+                        <div class="iconbox"><i class="fas fa-headphones"></i></div>
+                        <h1>Melophile</h1>
+                        <p> I am music addict. For me music is a magical key, to which my most tightly closed doors of heart also open. It is the only one thing in this world that I can count on. No matter how I feel, there is always my music matching my mood <3</p>
+                        </div>
+                </div>
+                <div class="sub sub2">
+                    <div class="q q3">
+                        <div class="iconbox"><i class="fa fa-book-reader"></i></div>
+                        <h1>Late Bloomer</h1>
+                        <p> Late Bloomer is anotherway of me saying slow learner.I am a proud slow learner. I know where to put efforts as I have to put lots of them. Thus once decided upon something I don't quit. Being slow gradually develops patience in me which again is rare virtue :D</p>
+                    </div>
+                    <div class="q q4">
+                        <div class="iconbox"><i class="fa fa-fire"></i></div>
+                        <h1>Livid</h1>
+                        <p> Anyone can become angry, and being human even I do but what I try to do is to be angry with right person at the right time for the right purpose and in right way. Though I am not percise always in doing it but I am trying my best to improve and isn't it quite tuff also :\</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="works sec" id="wm">
+        <div class="hello">
+            <b>My HandiWorks</b>
+            <h1>My work means everything to me, Have a Glimpse </h1>
+        </div>
+        <div class="work">
+            <div class="box">
+                <div class="sub sub1">
+                    <div class="w w1">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/bodao9bjxrso05r/screenshot_20210711_111104-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>1</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/WlwSNSGim9JI/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">About Me</div>
+                                <div class="desc">My First Html Code</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w w2">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/538qza5weij5wqn/screenshot_20210711_111940-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>2</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/WEdhfhaP32nL/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">My Poem</div>
+                                <div class="desc">My First Css Code</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub sub2">
+                    <div class="w w3">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/l7mkyq76z074ecj/screenshot_20210714_110020-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>3</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/W0yT72BGH2pp/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">Happy Birthday</div>
+                                <div class="desc">My First Birthday Code</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w w4">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/4pvz5xk533r0fkl/screenshot_20210711_112530-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>4</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/W1q3nd2ep7I0/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">Hypnotism Gradient</div>
+                                <div class="desc">My First CSS Illustration</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub sub3">
+                    <div class="w w5">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/hnnmlhx2vek7k3u/screenshot_20210714_105842-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>5</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/W3lBcbbTzzan/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">Calculator</div>
+                                <div class="desc">My First JavaScript Code</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w w6">
+                        <div class="imgbox">
+                            <img src="https://www.dropbox.com/s/2tyjdhh8bfms3ov/screenshot_20210711_112915-min.jpg?dl=1" alt="">
+                            <div class="overlay">
+                                <div class="wnumber"><b>6</b></div>
+                                <div class="zoom"><a href="https://code.sololearn.com/WPO8GQZ9m66E/?ref=app" target="_blank"><i class="fa fa-search-plus"></i></a></div>
+                                <div class="name">Maggi Services</div>
+                                <div class="desc">My First Web Page</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+    <section class="likes sec" id="lm">
+        <div class="hello">
+            <b>My Fancies</b>
+            <h1>I am slave to my likes and most of my desires </h1>
+        </div>
+        <div class="food">
+            <div class="slide">
+                <div class="in sleft"><i class="fas fa-chevron-left" onclick="nxt(-1)"></i></div>
+                <div class="sl sl1">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1545418546-5d55b491ca43?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjB8fG11c2ljJTIwd2FsbHBhcGVyfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>1</b></div>
+                            <div class="name">MY Melody</div>
+                            <div class="desc">My First And Last Forever True Love, A spirit of mine that will never die.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl sl2">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8bm9vZGxlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>2</b></div>
+                            <div class="name">Maggi</div>
+                            <div class="desc">My Mood uplifter without which imagining my life is impossible.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl sl3">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1606312619070-d48b4c652a52?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hvY29sYXRlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>3</b></div>
+                            <div class="name">Chocoholic</div>
+                            <div class="desc">Never underestimate my affinity towards chocolates.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl sl4">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1580915411954-282cb1b0d780?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OXx8aWNlJTIwY3JlYW0lMjBjb25lfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>4</b></div>
+                            <div class="name">Ice Cream</div>
+                            <div class="desc">No one can take place of ice cream as my best friend.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl sl5">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1546864974-efd4e100ecc3?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8c3VycHJpc2UlMjBnaWZ0fGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>5</b></div>
+                            <div class="name">Surprises</div>
+                            <div class="desc">Love to give surprises as those unexpected smiles are very precious to me. </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl sl6">
+                    <div class="imgbox">
+                        <img src="https://images.unsplash.com/photo-1503135935062-b7d1f5a0690f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fHJvc2VzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=60" alt="">
+                            <div class="overlay">
+                            <div class="wnumber"><b>6</b></div>
+                            <div class="name">Rosette</div>
+                            <div class="desc">My True Inspiration, inspires me to bloom inspite of thorns masked hurdles of life.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="in sright"><i class="fas fa-chevron-right" onclick="nxt(1)"></i></div>
+            </div>
+        </div>
+        <div class="about">
+            <p>So here I end my boring <b>Protofilo</b>. Hope you had a nice nap ;). So at the end of the day, I would simply put that, for some people I may be <b>boring</b>, for some I may be a <b>bag of negativity</b> or for some I may be high <b>Drama Queen</b> but what matters to me is that for me <b>I am</b> who I am. I am the <b>Architect</b> of my life. I <b>build</b> my own foundation and I <b>choose</b> my own bricks :D. <b>Don't judge</b> me as there is a reason for what I do and who I am. Afterall I am <b>Born To Express, Not To Impress :) </b> </p>
+        </div>
+    </section>
+    <section class="contact sec" id="cm">
+        
+        <div class="hello">
+            <b>Contact Me</b>
+            <h1>Wannna Be In Touch, Drop Your Valuable Message!</h1>
+        </div>
+        <div class="box">
+            <div class="sub">
+                <div class="formbox">
+                    <form action="#" id="form">
+                        <div class="field name">
+                            <div class="input-area">
+                                <input id="name" type="text" placeholder="Your Name">
+                            </div>
+                            <div class="error et">This Field Is Required</div>
+                        </div>
+                        <div class="field email">
+                            <div class="input-area">
+                                <input id="mail" type="text" placeholder="Your Email">
+                            </div>
+                            <div class="error et">This Field Is Required</div>
+                        </div>
+                        <div class="field subject">
+                            <div class="input-area">
+                                <input type="text" placeholder="Subject">
+                            </div>
+                        </div>
+                        <div class="field message">
+                            <div class="input-area">
+                                <input id="message" type="text" placeholder="Your Message">
+                            </div>
+                            <div class="error et">This Field Is Required</div>
+                        </div>
+                        <div class="field submit">
+                            <input type="submit" value="Submit">
+                        </div>
+                    </form>
+                </div>
+                <div class="aboutbox">
+                    <div class="abt abt1">
+                        <b><i class="fas fa-map-marker-alt"></i> &nbsp;  Where to Find Me</b>
+                        <p>H.No. -75 Atrangi Niwas, Maggi Land, 
+                            At Chocolate Mountain,
+                            Near Chocolaty River</p>
+                    </div>
+                    <div class="abt abt1">
+                        <b><i class="far fa-envelope"></i> &nbsp; Email Me At</b>
+                        <p>chocolate@maggi.com<br>
+                            icecreams@maggi.com</p>
+                    </div>
+                    <div class="abt abt1">
+                        <b><i class="fas fa-phone-alt"></i>  &nbsp; Call Me At</b>
+                        <p>Phone: (-75) 222 7777<br>
+                            Mobile: (-75) 222 5555</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">&copy; Anshika&#9836;, 2021</div>
+    </section>
+    <div class="main load" id="loader">
+        <div class="bbtn" onclick="skip()"><p>Skip</p></div>
+        <div class="lbox">
+            <div class="box">
+                <div class="b b1 b11"></div>
+            </div>
+            <div class="box box2">
+                <div class="b b1 b12"></div>
+            </div>
+            <div class="box box3">
+                <div class="b b1 b13"></div>
+            </div>
+            <div class="box box4">
+                <div class="b b1 b14"></div>
+            </div>
+            <div class="box box5">
+                <div class="b b1 b15"></div>
+            </div>
+            <div class="box box6">
+                <div class="b b1 b16"></div>
+            </div>
+            <div class="box box7">
+                <div class="b b1 b17"></div>
+            </div>
+            <div class="box box8">
+                <div class="b b1 b18"></div>
+            </div>
+            <div class="box box9">
+                <div class="b b1 b19"></div>
+            </div>
+            <div class="box box10">
+                <div class="b b1 b120"></div>
+            </div>
+        </div>
+    </div>
+    <!-- contactus formvalidtion -->
+    <!-- address -->
+
+    <script>
+        const openNav = () => {
+                document.getElementById('sidenavm').style.right = "0"; 
+                document.getElementById('subnav').style.right = "-5%";
+                document.getElementById('subnav').style.opacity = "1"; 
+            }
+            
+        const closeNav = () => {
+                document.getElementById('sidenavm').style.right = "-70vw";
+                document.getElementById('close').style.animation = "ham .5s linear both";
+                document.getElementById('subnav').style.right = "-100%";
+                document.getElementById('subnav').style.opacity = "0";
+                document.getElementById('subnav').style.transition = "all 2.5s ease"; 
+            }
+        window.onscroll = function(){bg()};
+
+        const hm = document.getElementById("hm");
+        const am = document.getElementById("am");
+        const qm = document.getElementById("qm");
+        const wm = document.getElementById("wm");
+        const lm = document.getElementById("lm");
+        const cm = document.getElementById("cm");
+        const loader = document.getElementById("loader");
+        function bg(){
+            if(document.body.scrollTop>150 || document.documentElement.scrollTop>150){                    
+            document.getElementById('ham').style.background = "#010419";
+            } else{
+            document.getElementById('ham').style.background = "#01041900";                
+            }   
+        }
+        function skip(){
+            setTimeout(() => {
+                document.getElementById('welcometxt').style.top = "50%";
+                document.getElementById('welcometxt').style.opacity = "1";                    
+                document.getElementById('welcometxt').style.transition = "all 2s ease";
+            }, 200);
+            setTimeout(() => {
+                hm.classList.remove("sec");
+                am.classList.remove("sec");
+                qm.classList.remove("sec");
+                wm.classList.remove("sec");
+                lm.classList.remove("sec");
+                cm.classList.remove("sec");
+                loader.classList.add("sec");
+            }, 100)
+        }
+        window.onload = function(){
+            setTimeout(() => {
+                document.getElementById('welcometxt').style.top = "50%";
+                document.getElementById('welcometxt').style.opacity = "1";                    
+                document.getElementById('welcometxt').style.transition = "all 2s ease";
+            }, 200);
+            setTimeout(() => {
+                hm.classList.remove("sec");
+                am.classList.remove("sec");
+                qm.classList.remove("sec");
+                wm.classList.remove("sec");
+                lm.classList.remove("sec");
+                cm.classList.remove("sec");
+                loader.classList.add("sec");
+            }, 100)
+        }
+        const number = document.querySelectorAll('.number');
+        const rate = 100000;
+   function num() {    
+for (let i = 0; i < number.length; i++){
+    let pos = number[i].getBoundingClientRect();
+    if(pos.top >= 0 && pos.bottom <= window.innerHeight){
+            const increase = () => {
+                const change = +number[i].getAttribute('data-target');
+                const numb = +number[i].innerText;
+                const incr = change/rate;
+                if(numb < change){
+                    number[i].innerText= Math.ceil(numb + incr);
+                    setTimeout(increase, 100);
+                }else{
+                    number[i].innerText = change;
+                }
+            };
+            increase();
+        }}};
+    
+window.addEventListener('scroll', num);//call function num on scrolling
+        var si = 1;
+        function slid(n){
+            var i;
+            var s = document.getElementsByClassName("sl");
+            if (n > s.length){
+                si = 1;
+            }
+            if(n < 1){
+                si = s.length;
+            }
+            for(i = 0; i < s.length; i++){
+                s[i].style.display = "none";
+            }
+            s[si-1].style.display ="block";
+        }
+        slid(si);
+        function nxt(n){
+            slid(si += n);
+        }    
+        function current(n){
+            slid(si = n);
+        }
+        
+        const frm = document.getElementById('form'), 
+        nfield = frm.querySelector('.name'),
+        ninput = nfield.querySelector('input')
+        efield = frm.querySelector('.email'),
+        einput = efield.querySelector('input'),
+        mfield = frm.querySelector('.message'),
+        minput = mfield.querySelector('input');
+        frm.onsubmit = (e)=>{
+        e.preventDefault();
+        if(ninput.value == ""){ 
+            nfield.classList.add("err", "inc");
+        }
+        if(einput.value == ""){ 
+            efield.classList.add("err", "inc");
+        }
+        if(minput.value == ""){ 
+            mfield.classList.add("err", "inc");
+        }
+        setTimeout(()=>{
+            nfield.classList.remove("err");
+            efield.classList.remove("err");
+            mfield.classList.remove("err");
+        }, 500);
+    }
+
+    </script>
+
+</body>
+</html>
